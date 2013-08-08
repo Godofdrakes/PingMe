@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Component 	xmlns="http://www.red5studios.com/"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:schemaLocation="http://www.red5studios.com/ ../../../schemas/component.xsd">
+	<Info
+		title="PingMe"
+		author="Godofdrakes"
+		description="Posts your current location (X, Y) to chat."
+		url=""
+		uiVersion="1000"
+	/>
+
+	<Events>
+		<Event name="ON_COMPONENT_LOAD"		bind="OnComponentLoad"/>
+		<Event name="ON_CHAT_MESSAGE"		bind="CheckPing"/>
+		<Event name="MY_CHAT_MESSAGE"		bind="CheckPing"/>
+	</Events>
+
+</Component>
